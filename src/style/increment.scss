@@ -1,0 +1,27 @@
+.increment {
+    background-color: rgba(20, 20, 20, .7);
+    color: rgba(245, 245, 245, 1.2);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: .2em;
+}
+
+.incrementWrapper{
+    padding: 20px 10px 20px 10px;
+
+    .buttonWrapper button {
+        background-color: darkgray;
+        color: rgba(245, 245, 245, 1.2);
+        border: 2px solid rgba(80, 80, 80, .4);
+        border-radius: .2em;
+    }
+}
+
+
+.number {
+    font-size: 12rem;
+    color: rgba(245, 245, 245, 1.2);
+}

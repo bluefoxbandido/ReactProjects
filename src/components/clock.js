@@ -24,7 +24,7 @@ export default class ClockApp extends Component {
         console.log()
         return (
 
-            <div className=''>
+            <div className='clockText'>
                 {moment().format("dddd, MMMM Do YYYY hh:mm:ss a")}
             </div>
         )
