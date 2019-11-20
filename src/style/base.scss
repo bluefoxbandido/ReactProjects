@@ -1,0 +1,118 @@
+html {
+    font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'montserrat';
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app-wrapper {
+    margin-top: 2rem;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+}
+
+.app {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+
+    h1 {
+        grid-row: 1;
+        height: 10vh;
+    }
+
+    .instruction {
+        grid-row: 3;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(3, 33vw);
+        grid-template-rows: repeat(2, 1fr);
+
+        .increment {
+            grid-row: 1;
+            grid-column: 1;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding-top: 10%;
+        }
+    
+        .toggle {
+            grid-row: 1;
+            grid-column: 2;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding-top: 10%;
+
+        }
+    
+        .alice {
+            grid-row: 1;
+            grid-column: 3;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding-top: 10%;
+        }
+    
+        .textAlign {
+            grid-row: 2;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding-top: 10%;
+        }
+        
+        .colorPicker {
+            grid-row: 2;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding-top: 10%;
+        }
+        .clock {
+            grid-row: 2;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding-top: 10%;
+        }
+
+    }
+
+
+}
+

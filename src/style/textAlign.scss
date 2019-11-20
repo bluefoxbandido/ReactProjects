@@ -1,0 +1,26 @@
+.textAlign {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+.buttons {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row: 1;
+}
+.left {
+    grid-column: 0;
+    grid-row: 3;
+    align-content: left;
+}
+
+.middle {
+    grid-row: 3;
+    grid-column: 6;
+}
+
+.right {
+    grid-row: 3;
+    grid-column: 12;
+}
