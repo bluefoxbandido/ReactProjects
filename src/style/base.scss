@@ -82,16 +82,17 @@ body {
             padding-top: 10%;
         }
     
-        .textAlign {
-            grid-row: 2;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-            align-items: center;
-            padding-top: 10%;
+        .left {
+            justify-content: left;
         }
-        
+
+        .middle {
+            justify-content: center;
+        }
+
+        .right {
+            align-items: right;
+        }        
         .colorPicker {
             grid-row: 2;
             width: 90%;

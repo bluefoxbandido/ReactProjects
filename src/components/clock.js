@@ -1,28 +1,31 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import moment from 'moment';
 
 export default class ClockApp extends Component {
-    constructor(props){
-        super(props);
+    constructor(props) {
+        super(props)
+
         this.state = {
-            value: moment().format('MMMM Do YYYY, h:mm:ss a')
+            time:  "" 
         }
-
     }
-
     componentDidMount(){
-        this.interval = setInterval(() => this.setState({
-            time: Date.now()
-        }), 1000);
+        const interval = setInterval(() => {
+            this.setState({
+                time: moment().format("dddd, MMMM Do YYYY hh:mm:ss a")
+            })
+        }, 1000);
     }
-    componentWillUnmount() {
-        clearInterval(this.interval)
+    componentWillUnmount(){
+        const deleteInterval = clearInterval(interval);
     }
 
-    render(){
+    render() {
+        console.log()
         return (
-            <div>
-                {this.state.value}
+
+            <div className=''>
+                {moment().format("dddd, MMMM Do YYYY hh:mm:ss a")}
             </div>
         )
     }

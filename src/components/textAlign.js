@@ -29,7 +29,7 @@ export default class TextAlign extends Component {
 
     render() {
         return (
-            <div>
+            <div className="textAlignWrapper">
                 <div className="buttons">
                     <button onClick={this.handleLeft}>Left</button>
                     <button onClick={this.handleMiddle}>Middle</button>
