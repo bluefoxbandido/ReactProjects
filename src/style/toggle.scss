@@ -1,3 +1,29 @@
 .hide {
     display: none;
 }
+
+.toggle {
+    background-color: lightgray;
+    border-radius: .2em;
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 2em;
+
+    .toggleWrapper {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        button {
+            width: 10%;
+            height: 5%;
+            position: fixed;
+        }
+
+        div {
+            justify-content: flex-end;
+        }
+    }
+}

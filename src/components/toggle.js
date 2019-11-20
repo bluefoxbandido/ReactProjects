@@ -26,7 +26,10 @@ export default class Toggle extends Component {
             <div className="toggleWrapper">
                 <button onClick={this.handleToggle}>Click Me</button>
                 <div className={this.state.show === false ? 'hide' : ''}>
-                    sample text
+                    Now you see me
+                </div>
+                <div className={this.state.show === true ? 'hide' : ''}>
+                    Now you dont
                 </div>
             </div>
         )

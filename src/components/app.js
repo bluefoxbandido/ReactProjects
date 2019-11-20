@@ -21,7 +21,10 @@ export default class App extends Component {
           </div>
           <div className="toggle">
             <p>
-              2) A message on the screen with a toggle button. Clicking the button will either hide or show the message.
+              2) 
+            </p>
+            <p>
+              A message on the screen with a toggle button. Clicking the button will either hide or show the message.
             </p>
             <Toggle />
           </div>
