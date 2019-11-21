@@ -29,7 +29,7 @@ export default class Toggle extends Component {
                     Now you see me
                 </div>
                 <div className={this.state.show === true ? 'hide' : ''}>
-                    Now you dont
+                    *obvious hide*
                 </div>
             </div>
         )

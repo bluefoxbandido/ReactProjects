@@ -21,7 +21,7 @@ export default class App extends Component {
           </div>
           <div className="toggle">
             <p>
-              2) 
+              2)
             </p>
             <p>
               A message on the screen with a toggle button. Clicking the button will either hide or show the message.
@@ -29,10 +29,11 @@ export default class App extends Component {
             <Toggle />
           </div>
           <div className="alice">
+            <Alice />
             <p>
               3) A message on the screen with two buttons. Clicking one button will make the text size bigger, and the other button will make it smaller.
             </p>
-            <Alice />
+
           </div>
           <div className="textAlign">
             <p>

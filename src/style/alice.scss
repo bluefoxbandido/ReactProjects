@@ -1,7 +1,55 @@
 .big {
-    font-size: 13em;
+    font-size: 6em;
 }
 
 .small {
-    font-size: 6em;
+    font-size: 3em;
+}
+.alice {
+    display: flex;
+    text-justify: center;
+    background-color: cornflowerblue;
+    color: chartreuse;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: .2em;
+}
+
+.aliceWrapper {
+    display: flex;
+    height:100%;
+    width: 100%;
+    flex-direction: column;
+    position: inherit;
+
+    .buttonsWrapper {
+        height: 30%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .big, .small {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: .2em;
+        }
+
+        button {
+            grid-row: 1;
+            width: 25%;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: .2em;
+            background-color: chartreuse;
+            border: 2px solid rgba(0, 255, 242, 0);
+            color: cornflowerblue;
+        }
+    }
 }

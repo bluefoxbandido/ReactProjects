@@ -1,6 +1,9 @@
 html {
     font-size: 62.5%; // 1rem is 10px
 }
+h2 {
+    margin-bottom: 10px;
+}
 
 *,
 *::after,
@@ -38,15 +41,19 @@ body {
 
     h1 {
         grid-row: 1;
-        height: 10vh;
+        height: 7vh;
     }
 
     .instruction {
         grid-row: 3;
         height: 90vh;
+        width: 66vw;
+        justify-content: center;
         display: grid;
+        margin-left: 17vw;
+        margin-right: 17vw;
         grid-template-columns: repeat(3, 33vw);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50vh);
 
         .increment {
             grid-row: 1;
@@ -82,17 +89,6 @@ body {
             padding-top: 10%;
         }
     
-        .left {
-            justify-content: left;
-        }
-
-        .middle {
-            justify-content: center;
-        }
-
-        .right {
-            align-items: right;
-        }        
         .colorPicker {
             grid-row: 2;
             width: 90%;
@@ -105,16 +101,17 @@ body {
         .clock {
             grid-row: 2;
             width: 90%;
+            margin-right: 0px;
             display: flex;
             flex-direction: column;
             justify-items: center;
             align-items: center;
-            padding-top: 10%;
+            padding: 10px;
         }
         .clockText {
             font-weight: bold;
             margin-top: 30px;
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
 
     }

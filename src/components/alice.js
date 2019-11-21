@@ -4,7 +4,7 @@ export default class Alice extends Component {
     constructor(props){
         super(props);
         this.state = {
-            size: ""
+            size: "big"
         }
         this.handleBig = this.handleBig.bind(this)
         this.handleSmall = this.handleSmall.bind(this)
@@ -23,11 +23,14 @@ export default class Alice extends Component {
     render(){
         return(
             <div className="aliceWrapper">
-                <button onClick={this.handleSmall}>Small</button>
-                <button onClick={this.handleBig}>Big</button>
-                <div className={this.state.size}>
+                <div style={{height: "110px"}} className={this.state.size}>
                     Alice
                 </div>
+                <div className="buttonsWrapper">
+                    <button onClick={this.handleSmall}>Small</button>
+                    <button onClick={this.handleBig}>Big</button>
+                </div>
+                
             </div>
         )
     }
